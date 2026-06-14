@@ -12,7 +12,7 @@ export default function ResumeDownloadSection() {
   const currentDateStr = "20260601";
 
   const triggerDownload = (format: 'pdf' | 'docx') => {
-    const filename = `林嘉欣-新媒体运营-个人简历-${currentDateStr}.${format}`;
+    const filename = `康康-新媒体运营-个人简历-${currentDateStr}.${format}`;
     let content = "";
     let mimeType = "";
 
@@ -22,7 +22,7 @@ export default function ResumeDownloadSection() {
       content = `
         <html xmlns:o='urn:schemas-microsoft-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
         <head>
-          <title>林嘉欣 - 新媒体运营 个人简历</title>
+          <title>康康 - 新媒体运营 个人简历</title>
           <style>
             body { font-family: 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333; padding: 20px; }
             h1 { color: #d9383a; border-bottom: 2px solid #d9383a; padding-bottom: 8px; }
@@ -34,7 +34,7 @@ export default function ResumeDownloadSection() {
           </style>
         </head>
         <body>
-          <h1>林嘉欣</h1>
+          <h1>康康</h1>
           <p class="info-item"><strong>求职意向：</strong>${PERSONAL_INFO.title} | <strong>所在地：</strong>${PERSONAL_INFO.location} | <strong>电话：</strong>${PERSONAL_INFO.phone} | <strong>邮箱：</strong>${PERSONAL_INFO.email}</p>
           
           <h2>个人简介</h2>
@@ -81,7 +81,7 @@ export default function ResumeDownloadSection() {
     } else {
       // Generate standard ASCII/Rich Printable formatting for PDF print conversion
       mimeType = 'text/plain;charset=utf-8';
-      content = `林嘉欣 - 新媒体运营 个人求职简历
+      content = `康康 - 新媒体运营 个人求职简历
 =========================================
 求职意向：${PERSONAL_INFO.title}
 所在地：${PERSONAL_INFO.location}
@@ -193,7 +193,7 @@ ${CERTIFICATES.map(cert => `- ${cert.title} | ${cert.issuer} (${cert.date})`).jo
       {downloadSuccess && (
         <div className="mt-4 flex items-center gap-2 px-3 py-1.5 bg-emerald-50 border border-emerald-100 rounded-lg text-xs text-emerald-700 animate-fade-in">
           <CheckCircle className="w-4 h-4 text-emerald-500" />
-          <span>正在成功下载：<strong>林嘉欣-新媒体运营-个人简历-20260601.{downloadSuccess === 'pdf' ? 'pdf' : 'doc'}</strong></span>
+          <span>正在成功下载：<strong>康康-新媒体运营-个人简历-20260601.{downloadSuccess === 'pdf' ? 'pdf' : 'doc'}</strong></span>
         </div>
       )}
 

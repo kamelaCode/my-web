@@ -28,7 +28,6 @@ import {
 
 import { PERSONAL_INFO } from './data';
 import MainWindow from './components/MainWindow';
-import MetricShots from './components/MetricShots';
 import DesktopTaskbar from './components/DesktopTaskbar';
 
 export default function App() {
@@ -59,27 +58,20 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#F5F4EF] text-stone-800 font-sans relative pb-16 overflow-x-hidden selection:bg-orange-200">
       
-      {/* 1. RETRO-MODERN AMBIENT RADIAL LIGHT GLOWS IN THE BACKGROUND */}
+      {/* 1. 复古现代风格背景光晕 */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0">
-        {/* Coral-Pink backlight */}
+        {/* 珊瑚粉色背光 */}
         <div className="absolute top-[-80px] left-[15%] w-[450px] h-[450px] rounded-full bg-gradient-to-tr from-rose-200/40 to-pink-300/30 blur-3xl mix-blend-multiply opacity-80"></div>
-        {/* Soft yellow-orange glow */}
+        {/* 柔和黄橙色光晕 */}
         <div className="absolute top-[-120px] left-[45%] w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-amber-100/50 to-orange-200/40 blur-3xl mix-blend-multiply opacity-90"></div>
-        {/* Soft sky-blue highlighter */}
+        {/* 柔和天蓝色高光 */}
         <div className="absolute top-[-80px] right-[10%] w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-cyan-100/40 to-sky-200/30 blur-3xl mix-blend-multiply opacity-80"></div>
       </div>
 
       {/* Main viewport Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10">
         
-        {/* TOP STATUS ROW */}
-        <div className="flex justify-between items-center border-b border-stone-200 pb-4 mb-8 text-[11px] font-mono text-stone-400">
-          <span>PORTFOLIO_DESKTOP // HOSTED ON CLOUD RUN</span>
-          <span className="flex items-center gap-1.5 font-bold text-orange-600">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
-            就绪可用 · 新媒体运营求职中
-          </span>
-        </div>
+
 
         {/* THREE COLUMNS GRID */}
         <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start">
@@ -92,9 +84,9 @@ export default function App() {
             {/* Quick Contacts Block */}
             <div className="font-mono text-[11px] space-y-1 text-stone-500 bg-white/40 p-4 rounded-xl border border-stone-200/60 shadow-3xs">
               <span className="text-[9px] text-stone-400 font-bold uppercase tracking-wider block mb-1">
-                // CONTACT_HANDLES
+                // 联系方式
               </span>
-              <p className="hover:text-stone-800 transition-colors uppercase font-medium">cyberjump_ops</p>
+              <p className="hover:text-stone-800 transition-colors uppercase font-medium">linjiaxin_ops</p>
               <p className="flex items-center gap-1 hover:text-stone-800 transition-colors">
                 <span className="text-orange-500 font-bold">@</span> {PERSONAL_INFO.wechat}
               </p>
@@ -117,16 +109,16 @@ export default function App() {
               <div>
                 <span className="text-[10px] font-mono font-bold text-stone-400 tracking-wider flex items-center gap-1">
                   <Folder className="w-3 h-3 text-stone-400 fill-stone-300" />
-                  CASE STUDIES / 简历目录
+                  案例研究 / 简历目录
                 </span>
                 <div className="mt-2 pl-3 border-l border-stone-200 space-y-1.5 font-mono text-xs text-stone-500">
                   {[
-                    { id: 'intro', name: '首页简介 (Bio Intro)' },
-                    { id: 'experiences', name: '个人经历 (Work Exp)' },
-                    { id: 'portfolio', name: '案例作品集 (Case Sheets)' },
-                    { id: 'skills', name: '技能与证书 (Skill Map)' },
-                    { id: 'download', name: '简历下载 (CV Downloads)' },
-                    { id: 'contact', name: '联系方式 (Connect)' }
+                    { id: 'intro', name: '首页简介' },
+                    { id: 'experiences', name: '个人经历' },
+                    { id: 'portfolio', name: '案例作品集' },
+                    { id: 'skills', name: '技能与证书' },
+                    { id: 'download', name: '简历下载' },
+                    { id: 'contact', name: '联系方式' }
                   ].map((item) => {
                     const isSelected = activeSection === item.id;
                     return (
@@ -147,7 +139,7 @@ export default function App() {
               <div>
                 <span className="text-[10px] font-mono font-bold text-stone-400 tracking-wider flex items-center gap-1">
                   <Folder className="w-3 h-3 text-stone-400 fill-stone-300" />
-                  APP PORTAL / 实操策略
+                  应用门户 / 实操策略
                 </span>
                 <div className="mt-2 pl-3 border-l border-stone-200 space-y-1.5 font-mono text-xs text-stone-500">
                   <button onClick={() => handleSectionClick('portfolio')} className="flex items-center gap-1.5 hover:text-stone-850 text-left w-full cursor-pointer">
@@ -171,7 +163,7 @@ export default function App() {
               {/* Folder 3: Auxiliary Icons matching the bottom reference */}
               <div className="pt-2 border-t border-stone-200">
                 <span className="text-[10px] font-mono font-bold text-stone-400 tracking-wider block mb-2">
-                  💾 INTERACTIVE TOOLS / 互动挂件
+                  💾 互动工具 / 互动挂件
                 </span>
                 <div className="grid grid-cols-2 gap-2 text-xs font-sans">
                   {/* Testimonial Guestbook */}
@@ -235,7 +227,7 @@ export default function App() {
                 <div className="w-16 h-16 rounded-full bg-stone-800 text-stone-100 font-mono text-2xl font-bold flex items-center justify-center shrink-0 shadow-md relative group select-none border-2 border-white">
                   {PERSONAL_INFO.avatarInitials}
                   <div className="absolute inset-0 rounded-full bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-xs font-sans font-bold cursor-help">
-                    林嘉欣
+                    康康
                   </div>
                 </div>
 
@@ -243,7 +235,7 @@ export default function App() {
                   <h1 className="text-2xl md:text-3xl font-sans font-bold text-stone-900 tracking-tight flex items-center gap-1.5">
                     {PERSONAL_INFO.name}
                     <span className="text-xs bg-orange-100 text-orange-700 font-mono px-2 py-0.5 rounded font-bold uppercase tracking-wider shrink-0 shadow-3xs">
-                      New Media Ops
+                      新媒体运营
                     </span>
                   </h1>
                   
@@ -288,30 +280,7 @@ export default function App() {
 
           </div>
 
-          {/* ========================================================= */}
-          {/* RIGHT SIDEBAR: GROWTH ANALYTICS WIDGETS */}
-          {/* ========================================================= */}
-          <div className="col-span-12 md:col-span-3 lg:col-span-3 space-y-6">
-            
-            {/* Real growth metric widget containing custom high-fidelity SVGs */}
-            <MetricShots />
 
-            {/* Interactive Sticky note mimicking real HR workspace */}
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 shadow-3xs relative rotate-1">
-              <div className="absolute top-2 right-2 w-4 h-4 bg-amber-400 opacity-20 hover:opacity-100 rounded-full cursor-help" title="新媒体运营金句">!</div>
-              <h4 className="text-stone-800 text-xs font-mono font-bold uppercase tracking-widest border-b border-amber-200 pb-1.5 mb-2 flex items-center gap-1">
-                <span>📌</span> 运营爆款金线 (KPI)
-              </h4>
-              <p className="text-amber-900 text-xs leading-relaxed font-sans font-medium">
-                好的运营不仅要有网感，也要能把选题、拍摄、活动、达人和社群一步步落到结果上。
-              </p>
-              <div className="mt-3.5 pt-2.5 border-t border-amber-200/50 flex justify-between items-center text-[10px] font-mono text-stone-500">
-                <span>林嘉欣 @ 2026</span>
-                <span className="font-bold text-orange-600">内容增长</span>
-              </div>
-            </div>
-
-          </div>
 
         </div>
 
@@ -344,7 +313,7 @@ export default function App() {
               {/* Retro titlebar */}
               <div className="bg-stone-800 text-white px-4 py-2.5 flex items-center justify-between">
                 <span className="font-mono text-xs text-stone-300">
-                  interactive_module // {activePopup}.sh
+                  互动模块 // {activePopup}.sh
                 </span>
                 <button
                   onClick={() => setActivePopup(null)}
@@ -362,7 +331,7 @@ export default function App() {
                   <div className="space-y-4">
                     <div className="flex gap-2 items-center">
                       <span className="text-xl">💝</span>
-                      <h3 className="text-base font-bold text-stone-900">业界同行推荐评价 (Guestbook)</h3>
+                      <h3 className="text-base font-bold text-stone-900">业界同行推荐评价</h3>
                     </div>
                     <p className="text-stone-500 text-xs">
                       以下内容整理自简历中的高频优势，可作为面试沟通时的快速参考：
@@ -386,7 +355,7 @@ export default function App() {
                   <div className="space-y-3 text-xs leading-relaxed text-stone-700">
                     <div className="flex gap-2 items-center">
                       <span className="text-xl">🦁</span>
-                      <h3 className="text-base font-bold text-stone-900">林嘉欣的增长独白 (About)</h3>
+                      <h3 className="text-base font-bold text-stone-900">康康的增长独白</h3>
                     </div>
                     <div className="space-y-2.5 bg-white p-4 rounded-xl border border-stone-200">
                       <p>
@@ -408,17 +377,17 @@ export default function App() {
                   <div className="space-y-4">
                     <div className="flex gap-2 items-center">
                       <span className="text-xl">🤖</span>
-                      <h3 className="text-base font-bold text-stone-900">智友智能面试小助手 (Q&A Chat)</h3>
+                      <h3 className="text-base font-bold text-stone-900">智友智能面试小助手</h3>
                     </div>
                     <p className="text-[#3c6e71] text-xs font-mono font-bold bg-[#f4f7f6] p-2 rounded border border-[#d2dbd9]">
-                      已成功开启林嘉欣简历自动答疑，选择您感兴趣的信息：
+                      已成功开启康康简历自动答疑，选择您感兴趣的信息：
                     </p>
                     <div className="space-y-2">
                       <button
-                        onClick={() => alert("林嘉欣目前希望寻找内容运营、品牌运营、新媒体运营、用户运营或AI内容运营等方向岗位。")}
+                        onClick={() => alert("康康目前希望寻找内容运营、品牌运营、新媒体运营、用户运营或AI内容运营等方向岗位。")}
                         className="w-full text-left px-3 py-2 bg-stone-100 hover:bg-orange-50 hover:text-orange-700 border border-stone-200 rounded-lg text-xs cursor-pointer block font-medium"
                       >
-                        ⚡ 1. 林嘉欣当前求职状态与入职时间？
+                        ⚡ 1. 康康当前求职状态与入职时间？
                       </button>
                       <button
                         onClick={() => alert("她最擅长：1) 账号矩阵从0-1搭建，2) 短视频策划拍摄剪辑，3) 活动运营与UGC裂变，4) 达人/KOL/KOC合作，5) AI内容生产提效。")}
@@ -441,7 +410,7 @@ export default function App() {
                   <div className="space-y-3 text-xs text-stone-700">
                     <div className="flex gap-2 items-center">
                       <span className="text-xl">📦</span>
-                      <h3 className="text-base font-bold text-stone-900">求职者物资大礼包 (Press Kit)</h3>
+                      <h3 className="text-base font-bold text-stone-900">求职者物资大礼包</h3>
                     </div>
                     <p className="text-stone-500">
                       特为尊贵的企业 HR / 面试官准备的求职全家桶，帮助您在内部汇报：

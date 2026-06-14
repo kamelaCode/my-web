@@ -91,22 +91,22 @@ export default function DesktopTaskbar({
             {/* Sidebar band in Start Menu */}
             <div className="flex">
               <div className="w-14 bg-gradient-to-b from-orange-500 to-amber-600 flex items-end justify-center pb-4 text-white font-mono text-[10px] font-bold origin-center -rotate-180 writing-vertical select-none capitalize leading-none tracking-widest text-[#fff] relative">
-                <span className="absolute bottom-10 left-1/2 -translate-x-1/2 rotate-90 shrink-0 transform whitespace-nowrap">JASMINE_简历版 v1.0</span>
+                <span className="absolute bottom-10 left-1/2 -translate-x-1/2 rotate-90 shrink-0 transform whitespace-nowrap">康康_简历版 v1.0</span>
               </div>
               
               {/* Menu Actions */}
               <div className="flex-1 p-2 space-y-1">
                 <span className="text-[10px] font-mono text-stone-500 px-2.5 pb-1 block border-b border-zinc-850">
-                  📁 个人简历板块 (SECTIONS)
+                  📁 个人简历板块
                 </span>
                 
                 {[
-                  { id: 'intro', name: '🏠 首页简介 (Intro)' },
-                  { id: 'experiences', name: '💼 个人经历 (Work)' },
-                  { id: 'portfolio', name: '🎨 项目作品集 (Portfolio)' },
-                  { id: 'skills', name: '🏆 技能证书 (Skill Spec)' },
-                  { id: 'download', name: '📥 简历下载 (Get CV File)' },
-                  { id: 'contact', name: '📞 联系方式 (Contacts)' },
+                  { id: 'intro', name: '🏠 首页简介' },
+                  { id: 'experiences', name: '💼 个人经历' },
+                  { id: 'portfolio', name: '🎨 项目作品集' },
+                  { id: 'skills', name: '🏆 技能证书' },
+                  { id: 'download', name: '📥 简历下载' },
+                  { id: 'contact', name: '📞 联系方式' },
                 ].map(item => (
                   <button
                     key={item.id}
@@ -121,7 +121,7 @@ export default function DesktopTaskbar({
                 ))}
 
                 <span className="text-[10px] font-mono text-stone-500 px-2.5 pt-2 pb-1 block border-b border-zinc-850">
-                  ⚡ 快速指令工具 (UTILITIES)
+                  ⚡ 快速指令工具
                 </span>
 
                 <button
@@ -143,7 +143,7 @@ export default function DesktopTaskbar({
                     <Monitor className="w-3.5 h-3.5" />
                     <span>{fullScrollMode ? "电脑桌面积木界面" : "全幅列表阅读界面"}</span>
                   </span>
-                  <span className="text-[9px] bg-zinc-800 text-stone-400 px-1 py-0.2 rounded font-mono">MODE</span>
+                  <span className="text-[9px] bg-zinc-800 text-stone-400 px-1 py-0.2 rounded font-mono">模式</span>
                 </button>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function DesktopTaskbar({
       <div className="flex items-center gap-3.5 text-xs text-stone-400">
         {/* Compact Mode indicator */}
         <span className="hidden md:inline text-[10px] bg-zinc-850 border border-zinc-800 px-2 py-0.5 rounded-md text-stone-400 select-none">
-          UTC+8 Base
+          UTC+8 时区
         </span>
 
         {/* Digital ticking Clock with calendar */}

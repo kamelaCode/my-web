@@ -105,7 +105,7 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
       
       <div className="relative">
         <span className="text-[10px] font-mono tracking-widest text-orange-600 font-bold uppercase block mb-1">
-          // Profile Intro.docx
+          // 个人简介.docx
         </span>
         <h2 className="text-xl font-bold text-stone-900 tracking-tight flex items-center gap-2">
           👋 首页个人简介
@@ -142,7 +142,7 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
     <div id="experiences-item" ref={experiencesRef} className="bg-[#FFFFFA] border border-stone-200 rounded-xl p-6 md:p-8 shadow-xs space-y-6">
       <div>
         <span className="text-[10px] font-mono tracking-widest text-[#38bdf8] font-bold uppercase block mb-1">
-          // Employment History.log
+          // 工作经历.log
         </span>
         <h2 className="text-xl font-bold text-stone-900 tracking-tight flex items-center gap-2">
           💼 个人工作经历 / HR 审阅重点
@@ -182,7 +182,7 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
             {/* Structured performance achievements */}
             <div className="mt-3.5 space-y-2 bg-[#FAF9F5] border border-stone-150 p-4 rounded-xl">
               <span className="text-[10px] font-mono text-orange-600 block font-bold mb-1 uppercase tracking-widest">
-                🏆 核心量化业绩指标 (METRIC ACHIEVEMENTS)
+                🏆 核心量化业绩指标
               </span>
               <ul className="space-y-2">
                 {exp.achievements.map((ach, index) => (
@@ -205,7 +205,7 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
           <div>
             <span className="text-[10px] font-mono tracking-widest text-emerald-600 font-bold uppercase block mb-1">
-              // Creative Case Studies
+              // 创意案例研究
             </span>
             <h2 className="text-xl font-bold text-stone-900 tracking-tight flex items-center gap-2">
               🎨 核心实操项目作品集
@@ -229,7 +229,7 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
     <div id="skills-item" ref={skillsRef} className="bg-[#FFFFFA] border border-stone-200 rounded-xl p-6 md:p-8 shadow-xs space-y-6">
       <div>
         <span className="text-[10px] font-mono tracking-widest text-purple-600 font-bold uppercase block mb-1">
-          // Skill Map & Certificates.xls
+          // 技能证书.xls
         </span>
         <h2 className="text-xl font-bold text-stone-900 tracking-tight flex items-center gap-2">
           🏆 技能证书 & 专业实力
@@ -293,13 +293,13 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
       
       <div>
         <span className="text-[10px] font-mono tracking-widest text-[#22c55e] font-bold uppercase block mb-1">
-          // Digital Rolodex.card
+          // 联系方式.card
         </span>
         <h2 className="text-xl font-bold text-stone-900 tracking-tight flex items-center gap-2">
           📞 欢迎联系我 / 期待加入您的团队
         </h2>
         <p className="text-stone-400 text-xs mt-1">
-          林嘉欣希望寻找内容运营、品牌运营、新媒体运营、用户运营及AI内容运营等方向岗位，欢迎沟通面试机会。
+          康康希望寻找内容运营、品牌运营、新媒体运营、用户运营及AI内容运营等方向岗位，欢迎沟通面试机会。
         </p>
       </div>
 
@@ -425,11 +425,11 @@ export default function MainWindow({ activeSection, onSectionChange, fullScrollM
                   <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
                   <div className="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
                 </div>
-                <span>Workspace_Section_Reader // {activeSection}.txt</span>
+                <span>工作区_板块_阅读器 // {activeSection}.txt</span>
               </div>
               <div className="flex gap-4 text-[10px] text-stone-400">
                 <span>UTF-8</span>
-                <span>Active</span>
+                <span>活跃中</span>
               </div>
             </div>
             

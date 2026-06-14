@@ -74,7 +74,7 @@ export default function ProjectGrid() {
                   >
                     <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1.5 border-4 border-transparent border-t-zinc-900"></div>
                     <span className="text-[10px] font-mono tracking-widest text-[#d9383a] uppercase font-bold flex items-center gap-1">
-                      <Sparkles className="w-2.5 h-2.5" /> HOVERING SPEC
+                      <Sparkles className="w-2.5 h-2.5" /> 悬停查看详情
                     </span>
                     <p className="text-xs font-sans font-medium mt-1 text-white">{proj.subtitle}</p>
                     <p className="text-[11px] font-sans text-stone-300 mt-1 leading-normal border-t border-zinc-800 pt-1">
@@ -119,8 +119,8 @@ export default function ProjectGrid() {
                     <div className="w-3 h-3 rounded-full bg-emerald-400 border border-emerald-500"></div>
                   </div>
                   <span className="font-mono text-xs text-stone-300 ml-2 tracking-tight">
-                    Project_case_docs // {selectedProject.id}.rtf
-                  </span>
+                  项目案例文档 // {selectedProject.id}.rtf
+                </span>
                 </div>
                 <button
                   id="close-project-modal-btn"
@@ -163,7 +163,7 @@ export default function ProjectGrid() {
                     {/* Role Panel */}
                     <div className="bg-[#FFFFFA] border border-stone-200 rounded-xl p-4">
                       <span className="text-[10px] font-mono text-stone-400 tracking-wider block mb-1">
-                        ● MY ROLE / 扮演角色
+                        ● 我的角色
                       </span>
                       <p className="font-semibold text-stone-800 text-sm flex items-center gap-1.5">
                         <Award className="w-4 h-4 text-orange-500" />
@@ -174,7 +174,7 @@ export default function ProjectGrid() {
                     {/* Timeline Panel */}
                     <div className="bg-[#FFFFFA] border border-stone-200 rounded-xl p-4">
                       <span className="text-[10px] font-mono text-stone-400 tracking-wider block mb-1">
-                        ● CLASSIFIED / 研发周期
+                        ● 项目周期
                       </span>
                       <p className="font-mono font-medium text-stone-700">
                         {selectedProject.year} 运营实操案
@@ -190,7 +190,7 @@ export default function ProjectGrid() {
                     {/* Overview */}
                     <div>
                       <h4 className="text-xs font-mono text-stone-400 tracking-widest uppercase mb-1.5 flex items-center gap-1">
-                        <Layers className="w-3.5 h-3.5" /> 1. 项目详细概述 (OVERVIEW)
+                        <Layers className="w-3.5 h-3.5" /> 1. 项目详细概述
                       </h4>
                       <p className="text-stone-700 text-xs md:text-sm leading-relaxed">
                         {selectedProject.details}
@@ -200,7 +200,7 @@ export default function ProjectGrid() {
                     {/* Implemented Features */}
                     <div>
                       <h4 className="text-xs font-mono text-stone-400 tracking-widest uppercase mb-1.5 flex items-center gap-1">
-                        <Star className="w-3.5 h-3.5 text-amber-500" /> 2. 攻坚行动与落地功能 (FEATURES)
+                        <Star className="w-3.5 h-3.5 text-amber-500" /> 2. 攻坚行动与落地功能
                       </h4>
                       <ul className="space-y-2">
                         {selectedProject.features.map((feature, i) => (
@@ -215,7 +215,7 @@ export default function ProjectGrid() {
                     {/* Achievements */}
                     <div className="bg-orange-50/50 border border-orange-200 rounded-xl p-4">
                       <h4 className="text-xs font-mono text-orange-700 tracking-widest uppercase mb-2 flex items-center gap-1">
-                        <Trophy className="w-3.5 h-3.5 text-orange-500 animate-pulse" /> 3. 实打实项目产出业绩 (ACHIEVEMENTS)
+                        <Trophy className="w-3.5 h-3.5 text-orange-500 animate-pulse" /> 3. 实打实项目产出业绩
                       </h4>
                       <ul className="space-y-2">
                         {selectedProject.achievements.map((ach, i) => (

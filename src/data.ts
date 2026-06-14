@@ -6,14 +6,14 @@
 import { Project, Experience, SkillCategory, Certificate } from "./types";
 
 export const PERSONAL_INFO = {
-  name: "林嘉欣",
+  name: "康康",
   title: "新媒体运营 / 品牌运营 / 内容运营 / 用户运营 / AI内容运营",
   email: "邮箱待补充",
   phone: "电话待补充",
   location: "所在地待补充",
   wechat: "微信待补充",
   avatarUrl: "",
-  avatarInitials: "林",
+  avatarInitials: "康",
   socials: [
     { label: "求职方向", value: "新媒体运营 / 品牌运营" },
     { label: "内容方向", value: "内容运营 / 用户运营" },
